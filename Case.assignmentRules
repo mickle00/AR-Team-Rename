@@ -1,0 +1,1568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Record type</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>DestinationServices286991</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(RecordType.DeveloperName = &apos;Destination_Services&apos; ,  OR(Parent.RecordType.DeveloperName = &apos;AAG&apos;, Parent.RecordType.DeveloperName = &apos;LX_Special_Projects_PE2E&apos;))</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>DestinationServices286991</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Destination Services</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Geography286991</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Geography</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>FareFiling286991</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Fare Filing</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ADM286991</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>ADM</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>AirCPR286991</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Air CPR</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>CarOps286991</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>CarOps</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Commissions286992</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Commissions</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ScheduleChange286992</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Schedule Change</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SettlementReporting286991</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Settlement &amp; Reporting</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Ticketing286991</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Ticketing</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>AirFulfillmentProcessSupport286991</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Air Fulfillment Process &amp; Support</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>RegionalTeamAMER</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Troubleshooting</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Description</field>
+                <operation>contains</operation>
+                <value>rtamerwfm@expedia.com</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>RegionalTeamEMEA</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Troubleshooting</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Description</field>
+                <operation>contains</operation>
+                <value>rtemeawfm@expedia.com</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>RegionalTeam3PP</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Troubleshooting</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Description</field>
+                <operation>contains</operation>
+                <value>rt3ppwfm@expedia.com</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>RegionalTeamAPAC</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Troubleshooting</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Description</field>
+                <operation>contains</operation>
+                <value>rtapacwfm@expedia.com</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>TroubleshootingTransportQueue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Troubleshooting</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>HDM286991</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>HDM</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>StarRatings286991</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Star Ratings</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SupportRequestTeam</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Support Request</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>HotelSystemsTechnicalSupport</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Systems Technical Support</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>CurriculumDesignTraining</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Curriculum Design &amp; Training</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Quality</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Quality</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>UserGeneratedContent286991</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>User Generated Content</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>InsourcedOperations</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Insourced Operations</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Localisation</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Localisation</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>LodgingOperationsHPS286991</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Lodging Operations - HPS</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>FinancialOperations286991</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Financial Operations</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>EVCSR</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>EVC - SR</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>HDM286991</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Id Request</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ETP_Training</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Training</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ContractLoading</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Contract Loading</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>LodgingOperationsSAM</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Lodging Operations - PAC/SAM</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>contains</operation>
+                <value>SAM-</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>LodgingOperationsPAC</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Lodging Operations - PAC/SAM</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>contains</operation>
+                <value>PAC-</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>LodgingContent286991</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Lodging Content</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>MediaContent286991</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Media Content</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Swiss_Approval</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Swiss Approval</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>FinancialOperations286991</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Financial Operations Breakage</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>EI_Leisure_Travel</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>EI Leisure Travel</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Media_Production</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Media Production</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Car_Photo</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Car Photo</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Destination_Experiences</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(RecordType.DeveloperName = &apos;DX_Media&apos; ,  OR(Parent.RecordType.DeveloperName = &apos;AAG&apos;, Parent.RecordType.DeveloperName = &apos;LX_Special_Projects_PE2E&apos;))</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>DX_Media</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>DX Media</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>LX_Supplier_Support</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>LX Supplier Support</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Destination_Experiences</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(RecordType.DeveloperName = &apos;Supply&apos; , OR(Parent.RecordType.DeveloperName = &apos;AAG&apos;, Parent.RecordType.DeveloperName = &apos;LX_Special_Projects_PE2E&apos;))</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>EEM_Dashboarders</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>EEM Dashboarders</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SA_Photos</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>SA Photos</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>AirFulfillmentProcessSupport286991</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Transport Internal</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Exceptions (Transport),Refund,Exchange</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ScheduleChange286992</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2</booleanFilter>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Transport Internal</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Schedule Change</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Ticketing286991</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Transport Internal</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Ticketing</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>AR_Seoul</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>All Rounders</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>AR Seoul</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>AR_Boston</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>All Rounders</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>AR Boston</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>AR_Bellevue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>All Rounders</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>AR Bellevue</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>AR_Denver</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>All Rounders</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>AR Denver</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>AR_Taipei</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>All Rounders</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>AR Taipei</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>AR_Thailand</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>All Rounders</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>AR Thailand</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>AR_Italy</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>All Rounders</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>AR Italy</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>AR_Brazil</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>All Rounders</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>AR Brazil</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>AR_Turkey</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>All Rounders</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>AR Turkey</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>AR_Greece</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>All Rounders</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>AR Greece</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>AR_Madrid</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>All Rounders</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>AR Madrid</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>AR_Manila</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>All Rounders</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>AR Manila</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>AR_Mexico</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>All Rounders</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>AR Mexico</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>AR_Montreal</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>All Rounders</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>AR Montreal</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>AR_London</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>All Rounders</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>AR London</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>AR_St_Petersburg</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>All Rounders</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>AR St. Petersburg</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>AR_Korea</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>All Rounders</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>AR Korea</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>AR_USA_NE_Region</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>All Rounders</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>AR USA NE Region</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>AR_Jakarta</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>All Rounders</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>AR Jakarta</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>AR_US_General</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>All Rounders</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>AR US General</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>AR_Paris</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>All Rounders</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>AR Paris</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>AR_Canada_General</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>All Rounders</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>AR Canada General</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>GWS_West_Region</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>GWS</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>GWS - Bellevue HQ,GWS - Las Vegas,GWS - San Francisco,GWS - San Jose</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>GWS_East_Region</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>GWS</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>GWS - Dallas,GWS - Springfield</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>GWS_HQ_Security</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>GWS</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>GWS - Security</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>NA_Regional_Territories</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>NA Regional Territories</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Expedia_Greece</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Expedia Greece</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Greece</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Expedia_Cyprus</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Expedia Greece</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Cyprus</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Regional_Spain_Portugal</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Regional Spain</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Regional_Spain_Portugal</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Regional Portugal</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Regional_UK</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Regional UK</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Regional_UK</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Regional Ireland</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Regional_Italy</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Regional Italy</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Regional_Germany</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Regional Germany</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Regional_France</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Regional France</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Regional_Benelux</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Regional Benelux</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Revenue_Specialist_New_York</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Revenue Specialist New York</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Revenue_Specialist_MidAtlantic</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Revenue Specialist MidAtlantic</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Revenue_Specialist_San_Francisco</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Revenue Specialist San Francisco</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Revenue_Specialist_Northeast</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Revenue Specialist Northeast</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Revenue_Specialist_South_Mountain</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Revenue Specialist Mountain South</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Revenue_Specialist_North_Mountain</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Revenue Specialist Mountain</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Revenue_Specialist_Northern_California</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Revenue Specialist Northern California</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Revenue_Specialist_Southern_California</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Revenue Specialist Southern California</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Market_Associate_Eastern_Canada</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Revenue Specialist Eastern Canada</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Revenue_Specialist_Western_Canada</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Revenue Specialist Western Canada</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Revenue_Specialist_Midwest</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Revenue Specialist Midwest</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Expedia_Team_Miami</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Expedia Team Miami</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Expedia_Team_North_Florida</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Expedia Team North Florida</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Revenue_Specialist_Southeast_3</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Revenue Specialist South East 3</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Expedia_Team_South_Florida</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Expedia Team South Florida</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Revenue_Specialist_Hawaii</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Revenue Specialist Hawaii</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Revenue_Specialist_Central</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Revenue Specialist Central</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Revenue_Specialist_Gaming</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Revenue Specialist Gaming</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Revenue_Specialist_USA</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Revenue Specialist USA</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>NA_Regional_Territories</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>NA Regional Territories</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>EMM_San_Diego_Area</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>San Diego</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>EMM_Orange_County_Area</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Orange County</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>EMM_Northern_California_Area</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Northern California</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>EMM_Los_Angeles_Area</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Los Angeles</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Hotel_Soporte</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Soporte</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>GPG_Coordinators</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>GPG Coordinators</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>VIP_Loyalty</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>VIP Loyalty</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>VIP_Loyalty_Training</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>VIP Loyalty Training</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Expedia_Middle_East</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Expedia Middle East</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Expedia_Indian_Ocean</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Expedia Indian Ocean</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Expedia_Southern_Africa</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Expedia Southern Africa</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Expedia_Regional_Canada</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Regional Canada</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Market_Associates_France_North_West</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Market Associates France North &amp; West</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Market_Associates_South_Texas</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Market Associates South Texas</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Market_Associates_North_Texas</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Market Associates North Texas</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Market_Associates_LA_OK_AR</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Market Associates - LA-OK-AR</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Regional_Mountain_South</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Regional Mountain South</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Regional_Mountain_West</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Regional Mountain West</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Regional_Mountain_Central</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Regional Mountain Central</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Regional_Pacific_Northwest</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Regional Pacific Northwest</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Expedia_Team_Orlando</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Expedia Orlando</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Market_Associates_Quebec</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Hotel Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Team__c</field>
+                <operation>equals</operation>
+                <value>Market Associates Quebec</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

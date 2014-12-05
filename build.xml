@@ -1,0 +1,27 @@
+<project name="Sample usage of Salesforce Ant tasks" default="test" basedir="." xmlns:sf="antlib:com.salesforce">
+
+    <property file="sf.properties"/>
+    <property environment="env"/>
+
+    <target name="getListViews">
+       <!-- You can pass the ChangeSet Name into packageNames to get via ANT -->
+       <sf:retrieve username="${test.sf.username}" password="${test.sf.password}"
+           serverurl="${test.sf.serverurl}" retrieveTarget="views" unpackaged="views/package.xml"/>
+    </target>
+
+    <target name="getAssignmentRules">
+       <!-- You can pass the ChangeSet Name into packageNames to get via ANT -->
+       <sf:retrieve username="${test.sf.username}" password="${test.sf.password}"
+           serverurl="${test.sf.serverurl}" retrieveTarget="assignment_rules" unpackaged="assignment_rules/package.xml"/>
+    </target>
+
+    <target name="deployAssignmentRules">
+      <sf:deploy username= "${test.sf.username}" password="${test.sf.password}" serverurl="${test.sf.serverurl}" deployRoot="assignment_rules" rollbackOnError="false" ignoreWarnings="false" pollWaitMillis="10000" maxPoll="500" allowMissingFiles="True">
+      </sf:deploy>
+    </target>
+
+    <target name="deployListViews">
+      <sf:deploy username= "${test.sf.username}" password="${test.sf.password}" serverurl="${test.sf.serverurl}" deployRoot="views" rollbackOnError="false" ignoreWarnings="false" pollWaitMillis="10000" maxPoll="500" allowMissingFiles="True">
+      </sf:deploy>
+    </target>
+</project>

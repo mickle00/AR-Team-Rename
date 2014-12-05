@@ -1,0 +1,11 @@
+A script to deploy changes & dependencies around renaming GoBig to AR
+
+--Need to manually change the Case.Team__c values from GB - YYY to AR YYYY prior to running this script
+--Need to update sf.properties with correct login information, regarding environment, etc
+--Need to update run_book.sh with force login -i={env} based upon environment test/login
+
+run run_book.sh to kick off the process
+
+Note, this will do 2 deployments. Could look at combining the outputs into one package.xml and deploying that together
+Also, while the system is in an 'inconsistent state' list views may not show all cases
+

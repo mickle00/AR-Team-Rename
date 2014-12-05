@@ -1,0 +1,3 @@
+test.sf.serverurl = https://test.salesforce.com
+test.sf.username = <un>
+test.sf.password = <pw>
