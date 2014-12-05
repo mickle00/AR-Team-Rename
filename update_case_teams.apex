@@ -33,4 +33,4 @@ for (Case_Team__c ct : cts){
   system.debug(ct);
 }
 
-//update cts;
+update cts;
